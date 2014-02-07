@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cyklodev\n"
 "POT-Creation-Date: 2013-07-30 16:15+0100\n"
-"PO-Revision-Date: 2014-02-05 13:36+0100\n"
+"PO-Revision-Date: 2014-02-06 09:31+0100\n"
 "Last-Translator: Marc Saettel <aidms@greenivory.com>\n"
 "Language-Team: Zephilou <zephilou@cyklodev.com>\n"
 "MIME-Version: 1.0\n"
@@ -11,6 +11,9 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
+
+msgid "Cyklodev Notification"
+msgstr "Cyklodev Notify"
 
 msgid ""
 "Notifiez vos utilisateurs par role directement sur vos <a href='edit."
@@ -50,7 +53,13 @@ msgid " sur "
 msgstr " on "
 
 msgid " pourrait vous intéresser."
-msgstr " might interess you."
+msgstr " might interest you."
 
 msgid "Notifier"
 msgstr "Notify"
+
+msgid "Customisez le texte"
+msgstr "Custom message"
+
+msgid "Choissez le role"
+msgstr "Choose role"
