@@ -61,12 +61,20 @@ if($_GET['twitter'] == 'twitting'){
             );
             $reply = $cb->statuses_update($params);
 
-            if($reply->httpstatus == 401){
-                echo '<div style="background-color:#ff0000;" align="center">Error : <b>'.$reply->errors[0]->message.'</b> Code ('.$reply->errors[0]->code.')
+            switch ($reply->httpstatus) {
+                case 401:
+                    echo '<div style="background-color:#ff0000;" align="center">Error : <b>'.$reply->errors[0]->message.'</b> Code ('.$reply->errors[0]->code.')
                       <br /> '.__("Verifiez  <a href='admin.php?page=cyklodev_notify_twitter'>vos clés twitter !</a>",'cyklodev').' 
                       </div>';
-            } else {
-                echo '<div style="background-color:#00ff00;" align="center">'.__("Succès !",'cyklodev').'</div>';
+                    break;
+                case 403:
+                      echo '<div style="background-color:#ff0000;" align="center">Error : <b>'.$reply->errors[0]->message.'</b> Code ('.$reply->errors[0]->code.')
+                      <br /> '.__("<a href='admin.php?page=cyklodev_notify&update_id=".$_GET['update_id']."&twitter=twitting'>Go Back !</a>",'cyklodev').' 
+                      </div>';
+                    break;
+                 default:
+                    echo '<div style="background-color:#00ff00;" align="center">'.__("Succès !",'cyklodev').'</div>';
+                    break;
             }
         } else {
             if(get_bloginfo('language') == 'fr_FR'){

@@ -5,7 +5,7 @@ Plugin Name: Cyklodev WP Notify
 Plugin URI: http://www.cyklodev.com/wordpress-notify/
 Description: Cyklodev WP Notify
 Author: Zephilou
-Version: 1.2.0
+Version: 1.2.1
 Author URI: http://www.cyklodev.com
 */
 

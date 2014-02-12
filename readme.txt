@@ -4,7 +4,7 @@ Donate link: http://www.cyklodev.com/donate
 Tags: post, metabox, notify, email, twitter
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,9 @@ You can follow this tutorial to get your twitter settings  http://www.cyklodev.c
 
 
 == Changelog ==
+
+= 1.2.1 =
+* Fix error message for tweet up to 140 char.
 
 = 1.2.0 =
 * Add Twitter post status capablity
